@@ -1,3 +1,7 @@
+package ainars.accounting;
+
+import ainars.accounting.Account;
+
 import java.util.ArrayList;
 import java.util.List;
 

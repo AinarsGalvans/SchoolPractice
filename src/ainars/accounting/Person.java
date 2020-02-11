@@ -1,23 +1,27 @@
+package ainars.accounting;
+
 import java.util.UUID;
 
 public class Person {
-    public String firstName;
-    public String lastName;
+    private String firstName;
+    private String lastName;
+
     public Person(String firstname, String lastName) {
         this.firstName=firstname;
         this.lastName=lastName;
     }
-    public String getFirstName() {
+
+    String getFirstName() {
         return firstName;
     }
 
-    public String getLastName() {
+    String getLastName() {
         return lastName;
     }
 
-    public UUID getUserId() {
+    UUID getUserId() {
         return userId;
     }
 
-    public UUID userId = UUID.randomUUID();
+    private UUID userId = UUID.randomUUID();
 }
