@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.List;
-import java.util.UUID;
 
 public class AccountManager {
     private List<Account> accounts = new ArrayList<>();
@@ -24,7 +23,7 @@ public class AccountManager {
         throw new IllegalArgumentException("Person has no accounts");
     }
 
-    public List<Person> finduser(String firstName, String LasName) {
+    public List<Person> findPersonas(String firstName, String LasName) {
         List<Person> result = new ArrayList<>();
 
         for (Account a:accounts
